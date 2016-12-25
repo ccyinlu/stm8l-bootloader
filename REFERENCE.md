@@ -72,9 +72,9 @@ if(booting){
 >`booting` is a global boolen variable indicating that whether the process now is in `boot` or `app`
 
 
-[remap mode]:./img/remap_mode.jpg "remap mode"
-[overlap mode]:./img/overlap_mode.jpg "overlap mode"
-[AN2659]:./doc/AN2659_Stm8_IAP_using_a_customized_user_bootloader.pdf.pdf
-[PM0047]:./doc/pm0047_programming_manual.pdf
-[UM0560]:./doc/um0560-stm8_bootloader.pdf
-[SWIM]:./doc/STM8-SWIM_communication_protocal_and_debug_mode.pdf
+[remap mode]:/img/remap_mode.jpg "remap mode"
+[overlap mode]:/img/overlap_mode.jpg "overlap mode"
+[AN2659]:/doc/AN2659_Stm8_IAP_using_a_customized_user_bootloader.pdf.pdf
+[PM0047]:/doc/pm0047_programming_manual.pdf
+[UM0560]:/doc/um0560-stm8_bootloader.pdf
+[SWIM]:/doc/STM8-SWIM_communication_protocal_and_debug_mode.pdf

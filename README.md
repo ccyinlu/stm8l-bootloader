@@ -122,6 +122,6 @@ Thanks for the work [hairBoot][hairboot] of [Zepan][Zepan].
 [ST-LINK]:https://detail.tmall.com/item.htm?spm=a230r.1.14.6.qu72qT&id=14634569468&cm_id=140105335569ed55e27b&abbucket=8 "example link for ST-LINK"
 [ST-LINK Driver]:http://pan.baidu.com/s/1qXBq3vu "driver for st-link "
 [STVP]:http://pan.baidu.com/s/1nuBwAxV "download link of STVP"
-[pySerial]:./python/pySerial/pyserial-master/ "path of the pySerial module"
+[pySerial]:/python/pySerial/pyserial-master/ "path of the pySerial module"
 [hairboot]:https://github.com/Zepan/hairBoot "hairboot"
 [Zepan]:https://github.com/Zepan "github homepage for Zepan"
