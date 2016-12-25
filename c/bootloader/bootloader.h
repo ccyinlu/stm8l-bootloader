@@ -26,7 +26,7 @@
 #define	  BLOCK_SHIFT           6
 #define   FLASH_START           0x008000
 #define   FLASH_END             0x009F80
-#define   FLASH_APP_MAIN        0x82fc
+#define   FLASH_APP_MAIN        0x827c
 
 //cmd code
 #ifdef USING_TRANSFER_VERIFICATION
@@ -38,7 +38,7 @@
 #define   BOOT_FLASH_VERIFICATION_ERR     0xa3
 #endif
 
-#define   BOOT_UNKNOWN_ERR                0xa4 
+#define   BOOT_UNKNOWN_ERR                0xa4
 #define   BOOT_HEAD                       0xa5
 #define   BOOT_READ                       0xa6
 #define   BOOT_WRITE                      0xa7
