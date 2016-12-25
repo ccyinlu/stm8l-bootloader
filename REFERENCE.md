@@ -54,22 +54,23 @@ When the space revered for the bootloader is not enough, fatal error will happen
 
 ## **Q & A**
 1. In the `OVERLAP` mode, the space address storing the app reset interrupt can be changed?  
->Absolutely yes!  
-Actually, when the bootloader ends, it will jump to the space address storing the app reset interrupt vector which stores the entry for main function. You can even just fetch the entry for main function, and put it into the `jump space address`, this will save a jump cycle.  
-In this example, we just choose the `jump space address` at the end of the `user-bootloader` `0x807c`. You can choose wherever you want just to avoid the occupation.
+    > Absolutely yes!  
+    Actually, when the bootloader ends, it will jump to the space address storing the app reset interrupt vector which stores the entry for main function. You can even just fetch the entry for main function, and put it into the `jump space address`, this will save a jump cycle.  
+    In this example, we just choose the `jump space address` at the end of the `user-bootloader` `0x807c`. You can choose wherever you want just to avoid the occupation.
 2. Can the interrupt enabled during the bootloader?  
->Generally not!  
-But if you change the bootloader a little, it can!  
-The reason why we should not enable interrupt during the bootloader is that we have damaged the interrupt vector, both in `REMAP` or `OVERLAP` mode after we rewrite the interrupt vector table.  
-In `REMAP` mode, if you enable specified interrupt during bootloader, you can make a branch like this:
-```c
-if(booting){
-    "excute the ISR for booting"
-}else{
-    "jump to the specified redirected address for app"
-}
-```
->`booting` is a global boolen variable indicating that whether the process now is in `boot` or `app`
+    > Generally not!  
+    But if you change the bootloader a little, it can!  
+    The reason why we should not enable interrupt during the bootloader is that we have damaged the interrupt vector, both in `REMAP` or `OVERLAP` mode after we rewrite the interrupt vector table.  
+    In `REMAP` mode, if you enable specified interrupt during bootloader, you can make a branch like this:
+
+    ```c
+    if(booting){
+        "excute the ISR for booting"
+    }else{
+        "jump to the specified redirected address for app"
+    }
+    ```
+    > `booting` is a global boolen variable indicating that whether the process now is in `boot` or `app`
 
 
 [remap mode]:/img/remap_mode.jpg "remap mode"
