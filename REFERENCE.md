@@ -47,7 +47,7 @@ When using `block programming`, you should map the code into the RAM, for exampl
     ```c
     IN_RAM(void FLASH_ProgBlock(uint16_t StartAddress, uint8_t *Buffer));
     ```
-for further information about the programming guide, refer to [AN2659][AN2659], [PM0047][PM0047], [UM0560][UM0560] and [SWIM][SWIM]
+    for further information about the programming guide, refer to [AN2659][AN2659], [PM0047][PM0047], [UM0560][UM0560] and [SWIM][SWIM]
 
 2. you should pay attention to the size of the bootloader.bin, in this example, we reserve 640bytes for bootloader. If you use more complicated algorithms such as `transfer verification`, `flash verification` or `CRC verification`, the size of the bootloader.bin will increase.  
 When the space revered for the bootloader is not enough, fatal error will happen.
@@ -73,9 +73,9 @@ When the space revered for the bootloader is not enough, fatal error will happen
     > `booting` is a global boolen variable indicating that whether the process now is in `boot` or `app`
 
 
-[remap mode]:/img/remap_mode.jpg "remap mode"
-[overlap mode]:/img/overlap_mode.jpg "overlap mode"
-[AN2659]:/doc/AN2659_Stm8_IAP_using_a_customized_user_bootloader.pdf
-[PM0047]:/doc/pm0047_programming_manual.pdf
-[UM0560]:/doc/um0560-stm8_bootloader.pdf
-[SWIM]:/doc/STM8-SWIM_communication_protocal_and_debug_mode.pdf
+[remap mode]:./img/remap_mode.jpg "remap mode"
+[overlap mode]:./img/overlap_mode.jpg "overlap mode"
+[AN2659]:./doc/AN2659_Stm8_IAP_using_a_customized_user_bootloader.pdf
+[PM0047]:./doc/pm0047_programming_manual.pdf
+[UM0560]:./doc/um0560-stm8_bootloader.pdf
+[SWIM]:./doc/STM8-SWIM_communication_protocal_and_debug_mode.pdf
